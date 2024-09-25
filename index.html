@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pokemon - Alejandro</title>
+</head>
+<body>
+    <form action="">
+        <fieldset style="background-color: antiquewhite;">
+            <legend>Informacion del Pokemon</legend>
+
+            <label for="nombre">Nombre del Pokemon: </label>
+            <input type="text" name="nombre" id="namepoke" required autofocus>
+            <br>
+            <br>
+            <label for="numeroDePokedex">numero de Pokédex: </label>
+            <input type="number" name="numeroDePokedex" id="numeroPokedex" min="1" max="999" required >
+            <br>
+            <br>
+            <div>
+                <label for="tipo">Tipo de pokemon:</label><br>
+                <input type="radio" name="tipo" value="fuego"> 
+                <label for="fuego"> Fuego</label>
+                <br>
+                <input type="radio" name="tipo" value="agua"> 
+                <label for="agua"> Agua:</label>
+                <br>
+                <input type="radio" name="tipo" value="planta">
+                <label for="planta"> planta:</label>
+                <br>
+                <input type="radio" name="tipo" value="Electrico">
+                <label for="Electrico"> Electrico:</label>
+            </div> <br> 
+            <label for="pokemon">Nivel de evolución: </label>
+            <select name="pokemon" id="evolucion">
+                <option value="basico">Basico</option>
+                <option value="primeraEvo">Primera Evolución</option>
+                <option value="segundaEvo">Segunda Evolución</option>
+            </select>
+            <br>
+            <br>
+            <label for="poder">Nivel de poder: </label>
+            <input type="range" name="poder" id="poderpokemon" value="50" min="1" max="100">
+            <br>
+            <br>
+            <label for="textarea">Descripción del pokemon:</label>
+            <br>
+            <textarea name="textarea" id="descripcionPokemon" placeholder="Escribe una breve descripción del pokemon" cols="40" rows="5" ></textarea>
+            <br>
+            <br>
+            <button type="submit">Agregar Pokémon</button>
+            <button type="reset">Limpiar Formulario</button>
+        </fieldset>
+    </form>
+</body>
+</html>
